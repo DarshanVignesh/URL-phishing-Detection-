@@ -8,14 +8,33 @@ The goal of this project is to develop a machine learning model capable of accur
 
 ## Dataset
 
-The dataset used for training and evaluation is stored in a CSV file named `phishing_urls.csv`. It contains a list of URLs along with their corresponding labels indicating their legitimacy.
+The dataset used for training and evaluation contains 11055 entries and 32 columns. Each column represents a feature that characterizes a URL, and the 'Result' column indicates the label, with the following meanings:
 
-### Features
-- URL: The web address of the website
-- Label: Label indicating the legitimacy of the URL
-  - 1: Legitimate
-  - 0: Suspicious
-  - -1: Phishing
+- 1: Legitimate
+- 0: Suspicious
+- -1: Phishing
+
+Here are some of the features included in the dataset:
+- having_IPhaving_IP_Address
+- URLURL_Length
+- Shortining_Service
+- having_At_Symbol
+- double_slash_redirecting
+- Prefix_Suffix
+- having_Sub_Domain
+- SSLfinal_State
+- Domain_registeration_length
+- Favicon
+- port
+- HTTPS_token
+- Request_URL
+- URL_of_Anchor
+- Links_in_tags
+- SFH
+- Submitting_to_email
+- Abnormal_URL
+- Redirect
+- Statistical_report
 
 ## Prerequisites
 
@@ -48,3 +67,4 @@ These accuracy scores demonstrate the model's ability to accurately classify URL
 Additionally, the results of individual predictions on the test dataset are presented, allowing for further analysis of the model's behavior.
 
 ---
+
